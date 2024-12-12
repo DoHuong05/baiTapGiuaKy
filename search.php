@@ -99,7 +99,7 @@ if ($result->num_rows > 0) {
         // Chuyển đổi trình độ học vấn
         switch ($row['level']) {
             case 0:
-                $level = "Cử nhân";
+                $level = "Kĩ sư";
                 break;
             case 1:
                 $level = "Thạc sĩ";
