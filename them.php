@@ -91,7 +91,7 @@ $conn->close();
         <!-- Trường chọn Trình độ học vấn -->
         <label for="level">Trình độ học vấn:</label>
         <select id="level" name="level" required>
-            <option value="0">Cử nhân</option>
+            <option value="0">Kĩ sư</option>
             <option value="1">Thạc sĩ</option>
             <option value="2">Tiến sĩ</option>
             <option value="3">Khác</option>
