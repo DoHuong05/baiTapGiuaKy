@@ -1,0 +1,205 @@
+/* Đặt lại các thuộc tính cơ bản của tất cả các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f7f9fc; /* Nền sáng dịu */
+    color: #4a4a4a; /* Màu chữ xám đậm */
+    padding: 20px;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+body:hover {
+    background-color: #eef3f9; /* Hiệu ứng hover toàn trang */
+}
+
+/* Tiêu đề chính của trang */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Màu xám đậm */
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Nút quay lại */
+.btn-back {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3498db; /* Xanh biển sáng */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.btn-back:hover {
+    background-color: #1e88e5;
+    transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+/* Form tìm kiếm và thêm sinh viên */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Hiệu ứng sáng viền */
+    outline: none;
+}
+
+.search-form button {
+    padding: 12px 20px;
+    background-color: #4caf50; /* Xanh lá nhẹ */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form button:hover {
+    background-color: #43a047; /* Xanh đậm hơn khi hover */
+    transform: scale(1.05);
+}
+
+.btn-add {
+    display: inline-block;
+    padding: 9px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;   
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 200px; /* Chiều rộng tối đa của nút */
+    width: 100%; /* Chiều rộng 100% để nút chiếm toàn bộ không gian */
+    height: 41px;
+}
+
+.btn-add:hover {
+    background-color: #fda706;
+}
+
+/* Bảng danh sách sinh viên */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 12px; /* Góc bo tròn */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+th {
+    background-color: #3498db; /* Xanh biển */
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f8f9fa; /* Xám nhạt */
+    transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+    background-color: #eaf1f8; /* Hiệu ứng hover */
+}
+
+/* Nút hành động trong bảng */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.edit {
+    background-color: #f1c40f; /* Vàng sáng */
+}
+
+button.edit:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+button.delete {
+    background-color: #e74c3c; /* Đỏ */
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+a.button {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.button.edit {
+    background-color: #f39c12;
+}
+
+a.button.edit:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+a.button.delete {
+    background-color: #e74c3c;
+}
+
+a.button.delete:hover {
+    background-color: #c0392b;
+}
+
+/* Style thông báo không có dữ liệu */
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c8d; /* Xám nhạt */
+    margin-top: 20px;
+    font-style: italic;
+}
