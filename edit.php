@@ -95,7 +95,7 @@ $conn->close(); // Đóng kết nối cơ sở dữ liệu
         <!-- Trường chọn Trình độ học vấn -->
         <label for="level">Trình độ học vấn:</label>
         <select id="level" name="level" required>
-            <option value="0" <?= $student['level'] == 0 ? 'selected' : '' ?>>Cử nhân</option>
+            <option value="0" <?= $student['level'] == 0 ? 'selected' : '' ?>>Kĩ sư</option>
             <option value="1" <?= $student['level'] == 1 ? 'selected' : '' ?>>Thạc sĩ</option>
             <option value="2" <?= $student['level'] == 2 ? 'selected' : '' ?>>Tiến sĩ</option>
             <option value="3" <?= $student['level'] == 3 ? 'selected' : '' ?>>Khác</option>
